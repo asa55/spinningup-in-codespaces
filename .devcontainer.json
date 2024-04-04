@@ -1,0 +1,13 @@
+{
+    "name": "OpenAI SpinningUp in Codespaces",
+    "image": "mcr.microsoft.com/devcontainers/python:3.6-bullseye",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "ms-python.python"
+            ]
+        }
+    },
+    "postCreateCommand": "cd /workspaces/spinningup-in-codespaces && sudo apt-get update && sudo apt-get install libopenmpi-dev && pip install -e ."
+}
